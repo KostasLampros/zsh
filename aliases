@@ -1,0 +1,26 @@
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# get top process eating cpu ##
+alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+alias ls='ls --color=auto'
+alias ..='cd ..'
+alias ...='cd ..;cd ..'
+alias ....='cd ..;cd ..;cd ..'
+
+# Directories aliases
+alias home='/home/kostas/'
+
+# DNF
+alias sdnf='sudo dnf'
+alias sdnfi='sudo dnf install'
+alias sdnfu='sudo dnf uninstall'
+
+
+# History grep
+function hg() {
+    history | grep "$1";
+}
